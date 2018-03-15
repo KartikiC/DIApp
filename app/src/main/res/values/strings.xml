@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DIApp</string>
+    <string name="title_activity_child">Child App</string>
+</resources>

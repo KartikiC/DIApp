@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kartiki.example.com.diapp.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rel1"
+        android:layout_below="@+id/my_toolbar"
+        android:fontFamily="sans-serif"
+        android:gravity="end"
+        android:textColor="#555555"
+        android:textSize="11sp"
+        android:textStyle="normal"
+       android:text="11:02 AM"
+        />
+
+        <RelativeLayout
+
+
+
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:id="@+id/rel1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_below="@+id/my_toolbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+
+            android:background="@drawable/rounded_corner"
+            android:visibility="visible"
+            android:layout_marginRight="8dp">
+
+
+            <TextView
+                android:id="@+id/Textviewtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="2sp"
+                android:text="This is long message where TS will come in second line "
+                android:textColor="@color/charcoal_grey"
+                android:textSize="14sp"
+                android:textStyle="normal"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/Textviewoval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:typeface="normal"
+        android:text="BM"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#2b2c33"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rel1"
+        android:background="@drawable/oval"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignBaseline="@+id/Textviewoval"
+        android:layout_alignBottom="@+id/Textviewoval"
+        android:layout_toEndOf="@+id/Textviewoval"
+        android:layout_toRightOf="@+id/Textviewoval"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/steel"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:text="Bhavesh Mehra, 11:02 AM"
+        android:id="@+id/textView2" />
+
+    <FrameLayout
+
+        android:id="@+id/xxx"
+        android:layout_width="248dp"
+        android:layout_height="97dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/Textviewoval"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_cornerleft"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+
+            android:text="This is very very looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/design_test_1"
+            android:layout_gravity="right"
+           />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rel1"
+        android:layout_below="@+id/xxx"
+        android:fontFamily="sans-serif"
+        android:gravity="end"
+        android:textColor="#555555"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:text="11:02 AM" />
+    <RelativeLayout
+
+
+
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:id="@+id/rel2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/time2"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+
+        android:background="@drawable/rounded_corner"
+        android:visibility="visible"
+        android:layout_marginRight="8dp">
+
+
+        <TextView
+            android:id="@+id/Textviewtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:text="This is long message where TS will come in second line "
+            android:textColor="@color/charcoal_grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/Textviewoval1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:typeface="normal"
+        android:text="BM"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rel2"
+        android:background="@drawable/orange_oval"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignBaseline="@+id/Textviewoval1"
+        android:layout_alignBottom="@+id/Textviewoval1"
+        android:layout_toEndOf="@+id/Textviewoval1"
+        android:layout_toRightOf="@+id/Textviewoval1"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/steel"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:text="Bhavesh Mehra, 11:02 AM"
+        android:id="@+id/textView3" />
+    <FrameLayout
+
+        android:id="@+id/xxx1"
+        android:layout_width="248dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/Textviewoval1"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_cornerleft"
+        android:visibility="visible"
+
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+
+            android:text="This is very very looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/design_test_1"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="7dp">
+        <ImageButton
+            android:id="@+id/imagebtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_8"
+            android:layout_gravity="right"
+            android:background="@drawable/oval"
+
+            />
+        <EditText
+            android:layout_width="177dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/charcoal_grey"
+            android:background="@drawable/rounded_edittext"
+            android:text="Type a message here"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:id="@+id/imagebtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reaction_floating_menu_scrollable_emoticons_copy"
+            android:layout_gravity="right"
+            android:background="@drawable/oval"
+            />
+        <ImageButton
+            android:id="@+id/imagebtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reaction_floating_menu_scrollable_emoticons_copy_2"
+            android:layout_gravity="right"
+            android:background="@drawable/oval"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
